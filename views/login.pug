@@ -1,0 +1,15 @@
+html
+  head
+    title Simple template
+  body(style='padding:50px; margin:0 auto; width:600px; text-align: center;')
+    form(action='http://localhost:3000/dynamic-view', method='GET')
+       p(style='display: inline')
+        | Name: 
+        input(type='text', name='first_name')
+
+       p(style='display: inline') 
+        | Password: 
+        input(type='text', name='last_name')
+
+        input(type='submit', value='Login')
+       h2 You need to be logged to access all functionality.
